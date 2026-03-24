@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TogetherEd Tutors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">TogetherEd</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        
+        <a href="community.html">Community</a>
+        <a href="tutors.html">Tutors</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    
+        <a class="btn btn-outline" id="logout-btn" href="#">Log Out</a>
+      </nav>
+    </div>
+  </header>
+  
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Tutors</span>
+      <h1>Find a Tutor or Peer Mentor</h1>
+      <p class="subtitle">Request support and see the result appear on the dashboard.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <div class="icon">👩‍🏫</div>
+        <h3>Maya L.</h3>
+        <p class="small">Grade 11 · English · ESL</p>
+        <p class="lead">Helps with speaking confidence, essay planning, and class participation.</p>
+        <span class="badge">English</span><span class="badge">ESL</span>
+        <div style="margin-top:14px"><a class="btn btn-primary" href="#" data-request-tutor="Maya L.">Request Support</a></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧠</div>
+        <h3>Daniel P.</h3>
+        <p class="small">Grade 12 · Math · Science</p>
+        <p class="lead">Supports algebra, functions, and science note organization.</p>
+        <span class="badge">Math</span><span class="badge">Science</span>
+        <div style="margin-top:14px"><a class="btn btn-primary" href="#" data-request-tutor="Daniel P.">Request Support</a></div>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌍</div>
+        <h3>Amina S.</h3>
+        <p class="small">Grade 10 · Newcomer · School Life</p>
+        <p class="lead">Helps students adjust to school routines, expectations, and communication.</p>
+        <span class="badge">Newcomer</span><span class="badge">School Life</span>
+        <div style="margin-top:14px"><a class="btn btn-primary" href="#" data-request-tutor="Amina S.">Request Support</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> TogetherEd · Learn Together. Grow Together.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

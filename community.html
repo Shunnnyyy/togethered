@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TogetherEd Community</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">TogetherEd</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        
+        <a href="community.html">Community</a>
+        <a href="tutors.html">Tutors</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    
+        <a class="btn btn-outline" id="logout-btn" href="#">Log Out</a>
+      </nav>
+    </div>
+  </header>
+  
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Community</span>
+      <h1>Community Sharing & Q&A</h1>
+      <p class="subtitle">Create demo posts and see them appear right away. The data stays in your browser using localStorage.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>Create a Post</h3>
+        <form id="post-form">
+          <div class="form-group">
+            <label>Title</label>
+            <input id="post-title" placeholder="How do I prepare for a Grade 10 English essay?">
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select id="post-category">
+              <option>Study Tips</option>
+              <option>ESL Support</option>
+              <option>Course Advice</option>
+              <option>School Life</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Post</label>
+            <textarea id="post-body" placeholder="Write your question or advice here..."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Add Post</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Community Guidelines Snapshot</h3>
+        <ul class="feature-list">
+          <li>Be respectful and helpful</li>
+          <li>No harassment or personal attacks</li>
+          <li>No private information sharing</li>
+          <li>Keep posts relevant to student support</li>
+        </ul>
+        <div class="notice" style="margin-top:16px">This MVP saves posts only in your own browser.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Recent Posts</h2>
+      <div id="community-feed"></div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> TogetherEd · Learn Together. Grow Together.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

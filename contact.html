@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TogetherEd Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">TogetherEd</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        
+        <a href="community.html">Community</a>
+        <a href="tutors.html">Tutors</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    
+        <a class="btn btn-outline" id="logout-btn" href="#">Log Out</a>
+      </nav>
+    </div>
+  </header>
+  
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Contact & Support</h1>
+      <p class="subtitle">Use this form for demo feedback, partnership ideas, or support questions.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>Get in touch</h3>
+        <p><strong>Email:</strong> example@togethered.org</p>
+        <p><strong>Use cases:</strong> school partnerships, club ideas, volunteer support, early testing</p>
+        <div class="notice">This MVP is static. It does not send real emails yet.</div>
+      </div>
+      <div class="card">
+        <h3>Send a Demo Message</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label>Name</label>
+            <input placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell us what you want to build next..."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> TogetherEd · Learn Together. Grow Together.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

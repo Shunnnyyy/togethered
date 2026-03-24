@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TogetherEd Log In</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">TogetherEd</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        
+        <a href="community.html">Community</a>
+        <a href="tutors.html">Tutors</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    
+        
+        <a class="btn btn-outline" href="login.html">Log In</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+    
+      </nav>
+    </div>
+  </header>
+  
+<main>
+  <section class="page-hero">
+    <div class="container center">
+      <span class="eyebrow">Demo Access</span>
+      <h1>Log In</h1>
+      <p class="subtitle">Use any email to enter the demo. Data is stored only in your browser.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="form-card">
+      <div class="form-group">
+        <label>Email</label>
+        <input id="login-email" type="email" placeholder="student@example.com">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
+      </div>
+      <a class="btn btn-primary" style="width:100%" href="#" id="login-btn">Log In</a>
+      <p class="small center" style="margin-top:14px">Need an account? <a href="signup.html" style="color:var(--primary);font-weight:700">Sign up here</a></p>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> TogetherEd · Learn Together. Grow Together.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
