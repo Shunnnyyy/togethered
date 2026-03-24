@@ -1,4 +1,9 @@
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
+const supabase = createClient(
+  'https://iazzrjqbpvcrxhsdjzub.supabase.co',
+  'sb_publishable_TZhNDvRK1c8mChCFAloWgg_w06EXEst'
+)
 const DB_KEY = 'togethered_demo_db_v1';
 
 const defaultDB = {
