@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TogetherEd Courses</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">TogetherEd</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        
+        <a href="community.html">Community</a>
+        <a href="tutors.html">Tutors</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    
+        <a class="btn btn-outline" id="logout-btn" href="#">Log Out</a>
+      </nav>
+    </div>
+  </header>
+  
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Courses</span>
+      <h1>Course Reviews & Study Advice</h1>
+      <p class="subtitle">Browse demo course reviews and add your own row to the table.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>Add a Course Review</h3>
+        <form id="course-review-form">
+          <div class="form-group">
+            <label>Course</label>
+            <input id="review-course" placeholder="ENG2D">
+          </div>
+          <div class="form-group">
+            <label>Difficulty</label>
+            <select id="review-difficulty">
+              <option>Easy</option>
+              <option>Medium</option>
+              <option>Medium-High</option>
+              <option>High</option>
+              <option>Supportive</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Workload</label>
+            <input id="review-workload" placeholder="Reading + writing">
+          </div>
+          <div class="form-group">
+            <label>Best Tip</label>
+            <textarea id="review-tip" placeholder="What worked for you?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Add Review</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Why this matters</h3>
+        <p class="lead">Course information helps students plan better, especially newcomers, ESL students, and anyone choosing subjects for the first time.</p>
+        <ul class="feature-list">
+          <li>Difficulty level</li>
+          <li>Workload expectations</li>
+          <li>Study strategies</li>
+          <li>Student-friendly advice</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Difficulty</th>
+            <th>Workload</th>
+            <th>Best Tip</th>
+          </tr>
+        </thead>
+        <tbody id="course-review-body"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> TogetherEd · Learn Together. Grow Together.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
